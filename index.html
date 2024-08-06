@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+  <head>
+    <h1 id="title">Superhero Aplication Form</h1>
+    <p id="description">Apply to become a super hero</p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <fieldset>
+         <label id="name-label">Enter your full name: <input type="text" id="name" placeholder="Fellah Schio" required /></label>
+      </fieldset>
+      <fieldset>
+         <label id="email-label">Enter your email address: <input required type="email" id="email" placeholder="NotAHero@gmail.com"/></label>
+      </fieldset>
+      <fieldset>
+         <label id="number-label">How many lives have you saved? <input type="number" min="100" max="1000000" id="number" placeholder="Over 9000?"/></label>
+      </fieldset>
+      <fieldset>
+        <label>What powers do you have?</label>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Flying</option>
+          <option value="2">Fire Breath</option>
+          <option value="3">Super Strength</option>
+          <option value="4">Stretchy Limbs</option>
+          <option value="5">Teleportation</option>
+          <option value="6">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Which best describes you?</legend>
+        <label><input type="radio" name="hero-type" value="Batman"/>Vigilante</label>
+        <label><input type="radio" name="hero-type" value="Superman"/>Public Hero</label>
+        <label><input type="radio" name="hero-type" Value="Fake-Hero"/>Anonymous Hero</label>        
+      </fieldset>
+      <fieldset>
+         <legend>Where do you see humanity in 5 years?</legend>
+         <label><input type="checkbox" value="1"/>Ensalved to aliens</label>
+         <label><input type="checkbox" value="2"/>Super advanced in technology</label>
+         <label><input type="checkbox" value="3"/>Back in the stone age</label>
+         <label><input type="checkbox" value="4"/>Bowing at your knees</label>
+         <label><input type="checkbox" value="5"/>In chaos due to lack of governments</label>
+      </fieldset>
+      <fieldset>
+        <label>Where did you get your powers?
+          <textarea>
+          </textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>  
+</html>
